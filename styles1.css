@@ -1,0 +1,187 @@
+/* Reset default browser styles */
+html, body, h1, h2, h3, ul, li, form, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+/* Content styles */
+.page-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.parking-status {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.parking-status h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.parking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 5px;
+}
+
+.parking-space {
+    background-color: lightgreen;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.parking-space.booked {
+    background-color: red;
+}
+
+.parking-controls {
+    margin-top: 20px;
+}
+
+/* Reservation form styles */
+.parking-reservation {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.parking-reservation form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parking-reservation label {
+    flex-basis: 45%;
+}
+
+.parking-reservation input,
+.parking-reservation button {
+    flex-basis: 45%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.parking-reservation button {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.parking-reservation button:hover {
+    background-color: #333; /* Change color on hover */
+}
+
+/* Payment section styles */
+.payment {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.payment p {
+    margin-bottom: 10px;
+}
+
+.payment button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment button:hover {
+    background-color: #ffc107; /* Change color on hover */
+}
+
+/* Feedback section styles */
+.feedback {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.feedback textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.feedback button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback button:hover {
+    background-color: #ffc107; /* Change color on hover */
+}

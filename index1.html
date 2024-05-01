@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Park</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo" >Just Park<i class="fa-solid fa-car" style="color: brown;"></i></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <h2 class="page-title">Smart Parking Management System</h2>
+            
+            <div class="parking-status">
+                <h3>Parking Spaces</h3>
+                <div id="available-spaces">Available Spaces: <span id="available-count">50</span></div>
+                <div id="allotted-spaces">Allotted Spaces: <span id="allotted-count">0</span></div>
+            </div>
+
+            <div class="parking-grid" id="parking-grid"></div>
+            
+            <div class="parking-controls">
+                <form id="parking-form">
+                    <label for="parking-quantity">Number of Spaces:</label>
+                    <input type="number" id="parking-quantity" min="1" max="50" required>
+                    <button type="submit" id="allocate-button">Allocate Parking</button>
+                    <button type="button" id="release-button">Release Parking</button>
+                </form>
+            </div>
+
+            <!-- Placeholder for Reservation Feature -->
+            <div class="parking-reservation">
+                <h3>Reservation</h3>
+                <form id="reservation-form">
+                    <label for="reservation-date">Date:</label>
+                    <input type="date" id="reservation-date" required>
+                    <label for="reservation-time">Time:</label>
+                    <input type="time" id="reservation-time" required>
+                    <button type="submit" id="reserve-button">Reserve Parking</button>
+                </form>
+            </div>
+
+            <!-- Placeholder for Payment Integration -->
+            <div class="payment">
+                <h3>Payment</h3>
+                <p>Total Amount: $<span id="total-amount">0</span></p>
+                <button id="pay-button">Pay Now</button>
+            </div>
+
+            <!-- Placeholder for Feedback and Rating System -->
+            <div class="feedback">
+                <h3>Feedback</h3>
+                <textarea id="feedback-text" placeholder="Enter your feedback here"></textarea>
+                <button id="submit-feedback">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2022 Smart Parking. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app1.js"></script>
+</body>
+</html>
